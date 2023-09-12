@@ -7,31 +7,39 @@ export default function AppComponent(props) {
     <div>
       <h1>Hello World, {id}!</h1>
 
-      <div>
-        <span className="tag">
-          {Liferay.Language.get("portlet-namespace")}:
-        </span>
-        <span className="value">{props.portletNamespace}</span>
-      </div>
+      <h2>
+        {Liferay.Language.get("portlet-element-id")}: {props.portletElementId}
+      </h2>
 
-      <div>
-        <span className="tag">{Liferay.Language.get("context-path")}:</span>
-        <span className="value">{props.contextPath}</span>
-      </div>
+      <table>
+        <tbody>
+          <tr>
+            <td className="tag">
+              {Liferay.Language.get("portlet-namespace")}:
+            </td>
+            <td className="value">{props.portletNamespace}</td>
+          </tr>
 
-      <div>
-        <span className="tag">
-          {Liferay.Language.get("portlet-element-id")}:
-        </span>
-        <span className="value">{props.portletElementId}</span>
-      </div>
+          <tr>
+            <td className="tag">{Liferay.Language.get("context-path")}:</td>
+            <td className="value">{props.contextPath}</td>
+          </tr>
 
-      <div>
-        <span className="tag">{Liferay.Language.get("configuration")}:</span>
-        <span className="value pre">
-          {JSON.stringify(props.configuration, null, 2)}
-        </span>
-      </div>
+          <tr>
+            <td className="tag">
+              {Liferay.Language.get("portlet-element-id")}:
+            </td>
+            <td className="value">{props.portletElementId}</td>
+          </tr>
+
+          <tr>
+            <td className="tag">{Liferay.Language.get("configuration")}:</td>
+            <td className="value pre">
+              {JSON.stringify(props.configuration, null, 2)}
+            </td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   );
 }
