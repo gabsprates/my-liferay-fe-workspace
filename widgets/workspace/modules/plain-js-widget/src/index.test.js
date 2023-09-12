@@ -20,4 +20,12 @@ describe("Render", () => {
       screen.getByRole("heading", { name: /hello world/i })
     ).toBeInTheDocument();
   });
+
+  it("rendering with language", () => {
+    main({ portletElementId: "root_node" });
+
+    expect(
+      screen.getByRole("heading", { name: "portlet-element-id: root_node" })
+    ).toBeInTheDocument();
+  });
 });

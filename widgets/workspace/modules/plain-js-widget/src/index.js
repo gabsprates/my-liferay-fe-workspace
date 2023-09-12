@@ -14,6 +14,10 @@ export default function main(params) {
     <div>
         <h1>Hello world!</h1>
 
+        <h2>${Liferay.Language.get("portlet-element-id")}: ${
+    params.portletElementId
+  }</h2>
+
         <pre>${JSON.stringify(params, null, 2)}</pre>
     </div>`;
 }
