@@ -3,7 +3,8 @@
     "workspaces": {
         "packages": [
             "modules/plain-js-widget",
-            "modules/plain-js-widget-agnostic"
+            "modules/plain-js-widget-agnostic",
+            "modules/react-widget-agnostic"
         ]
     }
 }
