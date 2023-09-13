@@ -6,6 +6,10 @@ export default function AppComponent(props) {
     <div>
       <h1>Hello World!</h1>
 
+      <h2>
+        {Liferay.Language.get("portlet-element-id")}: {props.portletElementId}
+      </h2>
+
       <div>
         <span className="tag">
           {Liferay.Language.get("portlet-namespace")}:
