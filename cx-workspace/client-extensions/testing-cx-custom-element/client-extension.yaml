@@ -1,0 +1,15 @@
+assemble:
+  - from: vite-build
+    into: static
+testing-cx-custom-element:
+  cssURLs:
+    - assets/index-*.css
+  friendlyURLMapping: testing-cx-custom-element
+  htmlElementName: testing-cx-custom-element
+  instanceable: true
+  name: Testing CX Custom Element
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - assets/index-*.js
+  useESM: true
