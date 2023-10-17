@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./vite-build/index.js",
+  "exports": {
+    ".": "./vite-build/index.js",
+    "./*": "./vite-build/*"
+  },
   "scripts": {
     "build": "tsc && vite build"
   },
