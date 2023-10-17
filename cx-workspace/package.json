@@ -3,7 +3,8 @@
     "workspaces": {
         "packages": [
             "client-extensions/testing-cx-custom-element",
-            "client-extensions/project-library"
+            "client-extensions/project-library",
+            "client-extensions/vite-project"
         ]
     }
 }
