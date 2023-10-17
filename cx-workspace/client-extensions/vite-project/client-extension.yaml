@@ -1,0 +1,15 @@
+assemble:
+  - from: vite-build
+    into: static
+vite-project:
+  cssURLs:
+    - index.css
+  friendlyURLMapping: vite-project
+  htmlElementName: vite-project
+  instanceable: true
+  name: Vite Element
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - index.js
+  useESM: true
