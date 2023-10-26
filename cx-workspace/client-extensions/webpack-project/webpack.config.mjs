@@ -35,7 +35,7 @@ const config = {
     },
   },
 
-  externals: [/^project-library(\/.*)?$/],
+  externals: ["react", "react-dom", /^project-library(\/.*)?$/],
   externalsType: "module",
 };
 
