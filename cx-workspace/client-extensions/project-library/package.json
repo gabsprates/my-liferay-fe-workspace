@@ -8,7 +8,7 @@
     "./*": "./vite-build/*"
   },
   "scripts": {
-    "build": "yarn build:webpack",
+    "build": "yarn build:vite",
     "build:vite": "tsc && vite build",
     "build:webpack": "webpack --mode production"
   },

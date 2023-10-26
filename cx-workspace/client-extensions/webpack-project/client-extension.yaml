@@ -1,0 +1,15 @@
+assemble:
+  - from: webpack-build
+    into: static
+webpack-project:
+  cssURLs:
+    - index.css
+  friendlyURLMapping: webpack-project
+  htmlElementName: webpack-project
+  instanceable: true
+  name: Webpack Element
+  portletCategoryName: category.client-extensions
+  type: customElement
+  urls:
+    - index.js
+  useESM: true

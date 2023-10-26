@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/webpack.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpack + React</title>
+    <script type="importmap">
+      {
+        "imports": {
+          "project-library": "http://localhost:8000/index.js",
+          "project-library/": "http://localhost:8000/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <webpack-project></webpack-project>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
