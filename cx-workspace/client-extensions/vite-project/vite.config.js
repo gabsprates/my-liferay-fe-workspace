@@ -15,7 +15,7 @@ export default defineConfig({
     outDir: "./vite-build",
 
     rollupOptions: {
-      external: [/^project-library(\/.*)?$/],
+      external: ["react", "react-dom", /^project-library(\/.*)?$/],
 
       output: {
         assetFileNames: "[name].[ext]",
