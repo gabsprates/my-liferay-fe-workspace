@@ -1,0 +1,11 @@
+project-react:
+  bareSpecifier: react
+  name: React - ES ImportMap
+  type: jsImportMapsEntry
+  url: https://esm.sh/react@18.2.0
+
+project-react-dom:
+  bareSpecifier: react-dom
+  name: React DOM - ES ImportMap
+  type: jsImportMapsEntry
+  url: https://esm.sh/react-dom@18.2.0
