@@ -1,0 +1,26 @@
+<!-- fragmentElementId: is an OOTB feature -->
+<div id="${fragmentElementId}">
+  <h1></h1>
+</div>
+
+<script type="module">
+  /**
+  * Because of all the configuration we did,
+  * to preserve modules, name chunks correctly,
+  * and defined as CX's `bareSpecifier`,
+  * that can also be used as:
+  *    import { myDate } from 'project-library/dates.js';
+  *    import { myString } from 'project-library/strings.js';
+  */
+  import { myDate, myString } from "project-library";
+
+  const fragmentElement = document.querySelector("#${fragmentElementId}");
+  const configuration = ${jsonFactoryUtil.looseSerializeDeep(configuration)};
+
+  [#noparse]
+  	console.log(fragmentElement, configuration);
+
+  	const title = fragmentElement.querySelector("h1");
+  	title.innerHTML = `${myString()} | ${myDate()}`;
+  [/#noparse]
+</script>
